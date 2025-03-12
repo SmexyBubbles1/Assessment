@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+.hero {
+    background: url('../images/aberdeen-banner1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: black;
+    background-color: yellow;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-item .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+}
+
+.nav-item .nav-link:hover {
+    color: #f1c40f !important;
+}
+
+/* About Section */
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+img.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Section */
+.map-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.map-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section .col-lg-6 {
+        margin-bottom: 30px;
+    }
+
+    .map-section {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border-color: #fff;
+    }
+}
