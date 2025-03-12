@@ -3,47 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places to Visit in [Your Hometown]</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Visit Aberdeen</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
-    <header>
-        <h1>Places to Visit in [Your Hometown]</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="visit.html">Visit</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="container">
-        <h2>Top Attractions</h2>
-        <div class="row">
-            <div class="col-md-7">
-                <h3>Attraction 1</h3>
-                <p>Description of attraction 1. This place is known for its stunning views and historical significance.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="attraction1.jpg" class="img-fluid rounded" alt="Attraction 1">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aberdeen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="visit.html">Visit</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <header class="hero text-center text-white">
+        <div class="container">
+            <h1>Explore Aberdeen's Best Attractions</h1>
+            <p>Discover breathtaking sights, thrilling activities, and hidden gems in Aberdeen.</p>
+        </div>
+    </header>
+
+    <!-- Attractions Section -->
+    <section class="container my-5">
         <div class="row">
-            <div class="col-md-7">
-                <h3>Attraction 2</h3>
-                <p>Description of attraction 2. This place is a must-visit for nature lovers and history enthusiasts.</p>
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="images/attraction1.jpg" class="card-img-top" alt="Aberdeen Harbour">
+                    <div class="card-body">
+                        <h5 class="card-title">Aberdeen Harbour</h5>
+                        <p class="card-text">Aberdeen Harbour, one of the busiest ports in Scotland, offers both historical and modern maritime experiences. Take a stroll along the waterfront or explore the nearby Maritime Museum.</p>
+                        <a href="https://www.aberdeenharbour.co.uk/" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5">
-                <img src="attraction2.jpg" class="img-fluid rounded" alt="Attraction 2">
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="images/attraction2.jpg" class="card-img-top" alt="Marischal College">
+                    <div class="card-body">
+                        <h5 class="card-title">Marischal College</h5>
+                        <p class="card-text">A stunning example of Scottish granite architecture, Marischal College is a magnificent landmark. Explore the architecture and learn about the city's academic heritage.</p>
+                        <a href="https://www.abdn.ac.uk/" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="images/attraction3.jpg" class="card-img-top" alt="Royal Deeside">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Deeside</h5>
+                        <p class="card-text">For nature lovers, Royal Deeside is the perfect escape. This picturesque area offers scenic hiking trails, breathtaking views, charming villages, and historic castles to explore and enjoy.</p>
+                        <a href="https://www.visitaberdeenshire.com/royal-deeside" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 [Your Hometown] Tourism Board</p>
+    <!-- Events Section -->
+    <section class="container my-5">
+        <h2 class="text-center">Events You Can’t Miss</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <img src="images/event1.jpg" class="card-img-top" alt="Light the Blue Festival">
+                    <div class="card-body">
+                        <h5 class="card-title">Light the Blue Festival</h5>
+                        <p class="card-text">The Aberdeen Light the Blue Festival is a vibrant celebration of art and culture. Experience stunning light displays, live performances, and immersive installations that illuminate the city's streets, captivating visitors of all ages.</p>
+                        <a href="https://www.aberdeenperformingarts.com/light-the-blue/" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <img src="images/event2.jpg" class="card-img-top" alt="Spectra">
+                    <div class="card-body">
+                        <h5 class="card-title">Spectra</h5>
+                        <p class="card-text">Aberdeen Spectra is an awe-inspiring festival of light and sound. Explore stunning light installations, captivating projections, and interactive displays that transform the city into a breathtaking visual experience.</p>
+                        <a href="http://www.spectrafestival.com" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="text-center">Find Us on the Map</h2>
+            <div id="map" style="height: 400px;"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Discover Aberdeen - Your Journey Starts Here</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
