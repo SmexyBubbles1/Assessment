@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Aberdeen</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Aberdeen</a>
+            <a class="navbar-brand" href="Home.html">Aberdeen</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
-                    <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="History.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Visit.html">Visit</a></li>
                 </ul>
             </div>
         </div>
@@ -31,25 +33,25 @@
     <header class="hero text-center text-white">
         <div class="container">
             <h1>Welcome to Aberdeen</h1>
-            <p>Discover the beauty, history, and experiences that make our town unique.</p>
+            <p>Experience the charm, history, and beauty of Scotland’s Granite City.</p>
         </div>
     </header>
 
-    <!-- About Section -->
+    <!-- About Aberdeen -->
     <section class="container my-5">
         <div class="row">
             <div class="col-lg-6">
-                <h2>About Aberdeen</h2>
-                <p>Aberdeen, located on the northeastern coast of Scotland, is a city known for its rich history, stunning landscapes, and vibrant culture. Often referred to as the "Granite City" for its striking grey stone buildings, Aberdeen combines historic charm with modern living. The city's maritime heritage is evident in landmarks such as the Aberdeen Harbour and Marischal College. Nature lovers will find plenty to explore, with the city's beautiful beaches, scenic coastline, and nearby Royal Deeside offering endless outdoor adventures. Aberdeen is also home to a thriving cultural scene, with festivals, galleries, and live music events throughout the year. Famous for its seafood, the city boasts a variety of dining options from casual to fine dining. Aberdeen's warm and welcoming atmosphere ensures that visitors always feel at home. Whether you’re here for history, nature, or food, Aberdeen offers something for everyone.</p>
+                <h2>Discover Aberdeen</h2>
+                <p>Aberdeen, located on the northeastern coast of Scotland, is a city incredibly rich in history, favorable in beauty, and blessed with a vibrant culture. Sometimes called the Granite City because of its thousands of distinctive grey stone buildings, Aberdeen has fused historic Old-World charm with cosmopolitan urban culture. It expresses its rich cultural heritage in the very important landmarks such as Aberdeen Harbour and Marischal College. Ample opportunities abound for the adventurers-sunny beaches, breathtaking scenic coastline, and nearby Royal Deeside. Food is very much a major consideration in Aberdonians' lives. Festivities and events such as art exhibitions and concerts celebrate live music throughout the year. The seafood in this city varies from fast food to a gourmet experience. One warm and welcoming welcome makes any outsider feel right at home no matter what business he might be out for.</p>
             </div>
             <div class="col-lg-6">
-                <img src="images/aberdeen.jpg" class="img-fluid rounded shadow" alt="Aberdeen" loading="lazy">
+                <img src="images/aberdeen.jpg" class="img-fluid rounded shadow" alt="Aberdeen's cityscape" loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
+    <!-- Interactive Map -->
+    <section class="map-section py-5 bg-light">
         <div class="container">
             <h2 class="text-center">Find Us on the Map</h2>
             <div id="map" style="height: 400px;"></div>
@@ -61,6 +63,7 @@
         <p>Discover Aberdeen – A city of history, culture, and natural beauty. Plan your visit today!</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="JS/script.js"></script>
