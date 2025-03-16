@@ -1,38 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of [Your Hometown]</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Aberdeen</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>History of [Your Hometown]</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="visit.html">Visit</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aberdeen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- Align navigation to the right -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center text-white">
+            <h1>Aberdeen's Rich History</h1>
+            <p>Explore the deep-rooted heritage and storied past of the Granite City.</p>
+        </div>
     </header>
 
-    <section class="container">
-        <h2>A Glimpse into the Past</h2>
-        <p>[Your Hometown] has a rich and vibrant history, with roots dating back to [specific time period]. Over the centuries, the town has evolved from [brief history description].</p>
-
-        <h3>Key Historical Events</h3>
-        <ul>
-            <li>Event 1</li>
-            <li>Event 2</li>
-            <li>Event 3</li>
-        </ul>
+    <!-- History Section -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>Origins & Early Days</h2>
+                <p>With a history dating back over 8,000 years, Aberdeen is one of Scotland’s oldest and most significant cities. Early inhabitants, including the Picts, left behind traces of their settlements, shaping the region's ancient foundations. Over time, the city evolved into a key medieval stronghold, with its two royal burghs—Old Aberdeen and New Aberdeen—playing a crucial role in Scotland’s development. As a thriving port, it became a center of trade, connecting Scotland with Europe through fishing, commerce, and shipbuilding. The city's historic streets, fortified structures, and enduring traditions reflect its rich and dynamic past. From its deep-rooted heritage to its continuous growth, Aberdeen has always played a pivotal role in shaping the nation’s cultural and economic landscape.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/history.jpg" class="img-fluid rounded shadow" alt="Historic view of Aberdeen">
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 [Your Hometown] Tourism Board</p>
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="images/old-town.jpg" class="img-fluid rounded shadow" alt="Historic Old Town">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Industrial Revolution & The Granite City</h2>
+                    <p>During the 18th and 19th centuries, Aberdeen underwent a dramatic transformation, earning the nickname “Granite City” due to its extensive use of locally quarried grey granite. The city's distinctive architecture, including landmarks such as Marischal College and St. Machar’s Cathedral, reflects this period of growth and development. As industrialization took hold, Aberdeen expanded rapidly, with improvements in transportation, commerce, and urban planning laying the foundation for a modern metropolis. The granite industry thrived, not only shaping the city's skyline but also contributing to major construction projects across the UK. This period saw the rise of remarkable buildings and infrastructure, shaping the city’s modern character and establishing it as a center of innovation and trade in Scotland.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history-modern my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Aberdeen in the Modern Era</h2>
+                    <p>In the 20th and 21st centuries, Aberdeen has become a global hub for the oil and gas industry, earning its title as the "Oil Capital of Europe." The discovery of North Sea oil in the 1960s transformed the city's economy, attracting international businesses and skilled professionals from around the world. With a thriving economy, a prestigious university, and a vibrant cultural scene, Aberdeen continues to evolve while preserving its rich heritage. Beyond its industrial success, the city boasts stunning coastal landscapes, historic architecture, and a strong commitment to sustainability, ensuring that it remains a dynamic and forward-thinking destination for generations to come.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/modern-aberdeen.jpg" class="img-fluid rounded shadow" alt="Modern Aberdeen skyline">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn More Section -->
+    <section class="learn-more bg-light py-5">
+        <div class="container text-center">
+            <h2>Find Out More About Aberdeen's History</h2>
+            <p>Discover more about Aberdeen’s fascinating past through these resources.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <a href="https://www.aberdeencity.gov.uk/services/libraries-and-archives/aberdeen-city-archives" target="_blank" class="btn btn-dark d-block my-2">Aberdeen City Archives</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.visitscotland.com/destinations-maps/aberdeen-city-shire/history-heritage/" target="_blank" class="btn btn-dark d-block my-2">Visit Scotland - Aberdeen Heritage</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.abdn.ac.uk/about/history/" target="_blank" class="btn btn-dark d-block my-2">University of Aberdeen History</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Discover Aberdeen – A city of history, culture, and natural beauty. Plan your visit today!</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
